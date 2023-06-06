@@ -25,7 +25,7 @@
         >
         <nav>
           <ul class="site-navigation">
-            <li>
+            <li class="nav-links-line">
               <a class="nav-links" href="index.html">Agencja</a>
             </li>
             <li>
@@ -53,9 +53,8 @@
     </header>
     <main>
       <div class="mainpage-header">
-        <div class="container">
           <h1 class="titletext">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="button-header">Zamów usługe</button>
+          <button type="button" class="button-header" class="modal-btn" data-modal-open>Zamów usługe</button>
         </div>
         </div>
       <section class="our-set-strenghts">
@@ -390,7 +389,7 @@
       </div>
         <div class="footer-social-icons">
           <h5 class="footer-social-title">DOŁĄCZ DO NAS</h5>
-          <ul class="social-icons-2">
+          <ul class="social-icons">
             <li class="social-icon-list">
               <a class="one-social-icon-footer" href="#">
                 <svg class="icons-footer-item" width="20" height="20">
@@ -423,5 +422,34 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close><svg width="30" height="30"><circle
+          r="15"
+          cx="15"
+          cy="15"
+          fill="#fff"
+          stroke="rgba(0, 0, 0, 0.1)"
+          stroke-width="1"
+        /><line
+        x1="9.5"
+        y1="9.5"
+        x2="20.5"
+        y2="20.5"
+        stroke="#2a2a2a"
+        stroke-width="2"
+      />
+      <line
+        x1="9.5"
+        y1="20.5"
+        x2="20.5"
+        y2="9.5"
+        stroke="#2a2a2a"
+        stroke-width="2"
+      />
+      </svg></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

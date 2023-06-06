@@ -82,19 +82,40 @@ li {
   letter-spacing: 2%;
   vertical-align: top;
   text-align: left;
+  position: relative;
 }
 .nav-links:hover,
 .nav-links:focus {
   color: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-links-line::after {
+.nav-link-active:hover,
+.nav-linkk-active:focus {
+  color: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-link-active {
+  color: var(--main-black);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 2%;
+  vertical-align: top;
+  text-align: left;
+  position: relative;
+}
+.nav-link-active::after {
   content: "";
   display: block;
   width: 100%;
   height: 4px;
   background-color: var(--main-blue);
   border-radius: 2px;
-  top: -76px;
+  bottom: -28px;
+  position: absolute;
 }
 .site-navigation {
   display: flex;
@@ -313,6 +334,8 @@ li {
   color: var(--main-white);
   background-color: var(--main-blue);
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-buttons {
   display: flex;
@@ -338,6 +361,8 @@ li {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-info {
   padding: 20px 24px 20px 24px;
@@ -420,10 +445,14 @@ footer {
 .social-icon:hover,
 .social-icon:focus {
   fill: var(--main-white);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .one-social-icon:hover,
 .one-social-icon:focus {
   background-color: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .one-social-icon:hover > .social-icon,
 .one-social-icon:hover > .social-icon {
@@ -455,6 +484,8 @@ footer {
 .our-client-logo:focus {
   fill: var(--main-blue);
   border-color: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-sections {
   display: flex;
@@ -496,6 +527,8 @@ footer {
 .one-social-icon-footer:hover,
 .one-social-icon-footer:focus {
   background-color: var(--main-blue);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
   display: flex;

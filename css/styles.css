@@ -533,8 +533,6 @@ footer {
 .our-client-logo:focus {
   fill: var(--main-blue);
   border-color: var(--main-blue);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-sections {
   display: flex;

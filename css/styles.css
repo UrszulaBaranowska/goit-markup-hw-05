@@ -96,6 +96,7 @@ li {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .nav-link-active {
   color: var(--main-black);
   text-decoration: none;
@@ -257,10 +258,25 @@ li {
   list-style: none;
   gap: 30px;
   justify-content: center;
+  align-items: flex-start;
 }
 .what-we-do-item {
-  flex-basis: calc((100% - 30px) / 3);
-  padding: 10px;
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+.what-we-do-text {
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--main-white);
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding: 27px;
 }
 .our-team-section {
   background-color: var(--second-white);
@@ -369,6 +385,39 @@ li {
   border: solid 1px;
   border-color: var(--lines-color-2);
   border-top: 0;
+}
+.card-portfolio-layer {
+  position: relative;
+  width: 100%;
+  height: 294px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-blue);
+  opacity: 0.9;
+  transform: translatey(100%);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--main-white);
+  padding: 49px 45px 49px 24px;
+}
+.card-portfolio-layer:hover .overlay {
+  transform: translateX(0);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-project {
   color: var(--second-black);
